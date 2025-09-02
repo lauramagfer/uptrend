@@ -1,0 +1,137 @@
+/* estilização tabela do carrinho */
+
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10%;
+}
+.section-title{
+    padding-bottom: 100px;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 50px white,0px 0px 10px rgb(0, 0, 0) ;
+}
+
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-item{
+    text-align: left;
+    border-bottom: 3.5px solid rgb(255, 255, 255);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+
+}
+
+.second-col,
+.third-col{
+    width: 26%;
+}
+.first-col{
+    padding-left: 290px;
+}
+
+
+
+.cart-product td{
+    padding: 8px 0;
+}
+
+.product-identification{
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image{
+    width: 215px;
+    height: 280px;
+}
+
+.cart-product-title{
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.cart-total-container{
+    text-align: end;
+    padding: 6px, 16px, 0 0;
+    font-size: 18px;
+}
+
+.product-qtd-input{
+    color: azure;
+    width: 70px;
+    height: 34px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid rgb(214, 126, 255);
+}
+
+.remove-product-button{
+    margin-left: 120px;
+    background-color: rgba(229, 201, 255, 0.84);
+    color: rgb(30, 10, 49);
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.purchase-button{
+    display: flex;
+    border: none;
+    margin-top: 50px;
+    padding: 16px 50px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #a66bff;
+    box-shadow: 0px 0px 100px rgb(127, 87, 193), 0px 0px 2px rgb(200, 124, 255) ;
+    cursor: pointer;
+    transition: background-color 1.5s ease-in-out;
+}
+
+#lastvalue{
+    color: rgb(224, 170, 255);
+    text-shadow: 10px 0px 25px purple;
+}
+
+.purchase-button:hover{
+    background-color: rgb(227, 213, 239);
+}
+
+
+
+/*Responsividade*/
+
+@media screen and (max-width:600px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead{
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #caa6f1;
+        box-shadow: 0px 0px 10px purple ;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 8px 5px;
+      }
+
+
+}

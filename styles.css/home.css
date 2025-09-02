@@ -1,0 +1,27 @@
+#slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #e2dbecc1;
+   text-shadow: 0 0 100px #A76CFF, 0 0 20px #4b1996, 0 0 10px #9770f1;
+}
+
+.slg1{
+    font-size: 42px;
+}
+
+.slg2{
+    font-size: 57px;
+}
+
+@media screen and (max-width:600px){
+    .slg1{
+        font-size: 30px;
+    }
+
+    .slg2{
+        font-size: 40px;
+    }
+}

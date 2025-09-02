@@ -1,0 +1,55 @@
+
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.roupas-iniciais{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.roupa-ind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+.titulo-inicial{
+   text-align: center;
+   font-size: 50px;
+   color: #e2dbecc1;
+   text-shadow: 0 0 60px #A76CFF, 0 0 20px #4b1996, 0 0 10px #9770f1;
+   margin-top: 50px;
+}
+
+@media screen and (max-width: 1170px){
+    .roupas-iniciais{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .roupa-ind{
+        width: calc(50% - 24px);
+    }
+
+}
+
+@media screen and (max-width: 600px){
+   .roupa-ind{
+        width: calc(100% - 24px);
+        align-items: center;
+    } 
+
+
+}
