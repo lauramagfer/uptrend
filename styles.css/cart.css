@@ -112,7 +112,7 @@
 
 /*Responsividade*/
 
-@media screen and (max-width:1170px){
+@media (min-width: 376px) and (max-width: 660px){
     table, thead, tbody, th, td, tr{
         display: block;
     }
